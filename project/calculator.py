@@ -1,4 +1,5 @@
-while True:
+i = 10
+while i < 11:
     num1 = int(input("Enter the first number: "))
     operator = input("Enter the operator (+, -, *, /): ")
     num2 = int(input("Enter the second number: "))
@@ -14,8 +15,8 @@ while True:
     else:
         print("Invalid operator")
 
-    print("Result * 2: ", result*2)
+    print("Result: ", result)
 
     choice = input("Do you want to perform another calculation? (y/n): ")
-    if choice.lower() != "y":
+    if choice == "n":
         break

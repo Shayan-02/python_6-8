@@ -1,8 +1,8 @@
 j = 1
-n = int(input("enter a number: "))
-m = int(input("enter a number: "))
-i = n
-for i in range(n, m):
+min = int(input("enter min number: "))
+max = int(input("enter max number: "))
+i = min
+for i in range(min, max):
     if i % 2 == 0:
         print(f"{j}: {i}")
         j += 1

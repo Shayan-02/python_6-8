@@ -1,14 +1,12 @@
-import random_num
-
 # Generate a random number between 1 and 100
-randNum = random.randint(1, 100)
+randNum = 50
 
 # Initialize the number of attempts
-attempts = 0
+attempts = 1
 
 # Start the game with a while loop
-while True:
-    guess = int(input("Enter your guess (1-100): "))
+while attempts <= 5:
+    guess = int(input(f"Enter your guess{attempts} (you have {5-attempts} attempts left): "))
     attempts += 1
 
     if guess < randNum:
