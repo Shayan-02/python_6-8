@@ -1,4 +1,7 @@
-lst1 = [1, "alireza", "amiri", 25, 20, True]
+lst1 = [1, "alireza", "amiri", 25, 20, True, 2, 2, 8, 6, 6, 5]
+x = len(lst1)
+print(x)
+print(len(lst1))
 lst1[2] = "mohammadi"
 lst1.append("ali")
 lst1.insert(1,"reza")
@@ -6,4 +9,9 @@ print(lst1)
 lst1.pop(2)
 print(lst1)
 lst1.reverse()
+print(f"lst1: {lst1}")
+lst2 = lst1.copy()
+lst2.append("new item")
+print("lst2:", lst2)
+lst1.clear()
 print(lst1)
