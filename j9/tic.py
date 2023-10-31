@@ -1,4 +1,4 @@
-from termcolor import colored
+import termcolor
 board = list(range(1, 10))
 winners = ((0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6),
            (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6))
@@ -12,9 +12,9 @@ def print_board():
         if j % 3 == 0:
             end = "\n\n"
         if i == "X":
-            print(colored(f"[{i}]", "red"), end=end)
+            print(termcolor.colored(f"[{i}]", "red"), end=end)
         elif i == "O":
-            print(colored(f"[{i}]", "blue"), end=end)
+            print(termcolor.colored(f"[{i}]", "blue"), end=end)
         else:
             print(f"[{i}]", end=end)
         j += 1
@@ -86,10 +86,10 @@ while has_empty_space():
         print("Invalid number! Try again!")
         continue
     if won:
-        print(colored("You won!", "green"))
+        print(termcolor.colored("You won!", "green"))
         break
     elif computer_move()[1]:
-        print(colored("You lose!", "yellow"))
+        print(termcolor.colored("You lose!", "yellow"))
         break
 
 print_board()
