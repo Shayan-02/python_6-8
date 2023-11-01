@@ -1,9 +1,10 @@
 def name1():
-    return "name1:", 2 + 4
-
+    print("name1")
+    c = 2 + 4
+    return c
 
 def name2(a, b):
-    print("name2:", a + b)
+    return "name2:", a + b
 
 
 def name3(a, b):
@@ -16,9 +17,9 @@ def name4(a, b):
 
 name1()
 name2(1, 2)
-name3(1, 2)
-name4(1, 2)
+name3(3, 5)
+name4(8, 7)
 
 print()
-print(name1())
+print(name2(5, 6))
 print(f"{name3(1, 2)}")

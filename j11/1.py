@@ -1,6 +1,6 @@
 from random import randint
 
-correct = False
+
 def random_number_generator(minimum, maximum, guess, random_number):
     """
     Generates a random number between the minimum and maximum values.
@@ -14,8 +14,8 @@ def random_number_generator(minimum, maximum, guess, random_number):
     return:
     A random number between the minimum and maximum values.
     """
-
-
+    global correct
+    correct = False
     if guess < minimum or guess > maximum:
         print("out of range ...")
     elif guess < random_number:
@@ -33,7 +33,7 @@ r = randint(minimum, maximum)
 
 i = 1
 while i < 6:
-    guess = int(input(f'Guess number{i}: '))
+    guess = int(input('Guess number: '))
     random_number_generator(minimum, maximum, guess, r)
     if correct == True:
         break
