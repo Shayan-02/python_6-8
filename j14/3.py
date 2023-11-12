@@ -6,7 +6,6 @@ def power_of_two(x):
         return x ** 2
 
 
-
 a = []
 for i in range(1, 4):
     num = int(input(f"enter number{i}: "))
