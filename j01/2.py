@@ -1,5 +1,0 @@
-fname = input("enter your name: ")
-lname = input("enter your last name: ")
-age = int(input("enter your age: "))
-print(f'fullname: {fname} {lname} and age is: {age}')
-print("fullname: {} {} and age is: {}".format(fname, lname, age))
