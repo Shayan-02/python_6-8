@@ -18,4 +18,4 @@ lbl2 = Label(root, text="first name").pack()
 ent1 = Entry(root, width=50).pack()
 btn = Button(root, text="submit", command=lambda : newTab()).pack()
 
-root.mainloop()
+root.mainloop() 

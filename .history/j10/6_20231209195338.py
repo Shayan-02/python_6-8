@@ -41,4 +41,3 @@ def random_number_generator(minimum, maximum, guess, random_number):
 # end while
 
 help(random_number_generator)
-print(random_number_generator.__doc__)
