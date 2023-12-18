@@ -13,12 +13,12 @@ cursor = conn.cursor()
 sql = '''
 	CREATE TABLE IF NOT EXISTS passwords(
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
-	website VARCHAR(30) NOT NULL,
+	website TEXT NOT NULL,
 	username TEXT NOT NULL,
 	password TEXT NOT NULL
 	)
 '''
-cursor.execute(sql)
+cursor.execute()
 
 conn.commit()
 

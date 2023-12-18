@@ -10,15 +10,8 @@ cipher_suite = Fernet(encryption_key)
 
 conn = sqlite3.connect('passwd_manager.db')
 cursor = conn.cursor()
-sql = '''
-	CREATE TABLE IF NOT EXISTS passwords(
-	id INTEGER PRIMARY KEY AUTOINCREMENT,
-	website VARCHAR(30) NOT NULL,
-	username TEXT NOT NULL,
-	password TEXT NOT NULL
-	)
-'''
-cursor.execute(sql)
+sql = 
+cursor.execute()
 
 conn.commit()
 
