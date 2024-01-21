@@ -78,7 +78,7 @@ def save_act():
 
 def load_info():
     messagebox.showinfo(
-        "info", "this is Todolist V.1.0 \nPython Project",)
+        "info", "this is Todolist V.1.0 \n Python Project",)
 
 
 def load_act():
